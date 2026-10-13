@@ -1,0 +1,11 @@
+# PyTorch va aparte, según tu equipo (CPU o CUDA): https://pytorch.org/get-started/locally/
+ultralytics>=8.3        # YOLO + ByteTrack
+lap                     # requerido por ByteTrack
+opencv-python
+numpy
+pillow
+pyyaml
+yt-dlp
+imageio-ffmpeg          # ffmpeg empaquetado, para equipos sin ffmpeg en el sistema
+faster-whisper          # transcripción local
+open_clip_torch         # opcional: solo con buscar.py --clip

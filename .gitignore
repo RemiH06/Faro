@@ -1,0 +1,13 @@
+# Casos: videos, fotos, fichas, transcripciones y reportes. Nunca al repo.
+casos/
+
+# Configuración local y notas de trabajo
+.env
+steps.md
+context.md
+
+# Entorno, caché y modelos descargados
+.venv/
+__pycache__/
+modelos/
+*.pt

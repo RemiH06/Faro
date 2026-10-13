@@ -1,0 +1,29 @@
+# Ficha de ejemplo (datos inventados). Copiar a <casos>/<caso>/ficha.yaml y llenar.
+# El identificador del caso no debe llevar nombre ni iniciales de la persona.
+caso: caso-001
+objetivo: ubicar a la persona en videos del evento
+fecha_evento: AAAA-MM-DD
+lugar_evento: calles, colonia, municipio, estado
+ventana_horaria: "12:00-16:30"
+
+# Lo más distintivo y observado el mismo día. Pesa más en la revisión.
+señas_particulares:
+  - gorra roja
+  - cabello rizado a los hombros
+vestimenta_ese_dia:
+  - sudadera verde
+  - pantalón de mezclilla azul
+complexion: mediana
+accesorios: [gorra roja, mochila negra]
+notas: >
+  Un recorte confirmado por alguien que conoce a la persona vale más que cualquier puntaje.
+
+# Colores de ropa para scripts/atuendo.py (HSV de OpenCV: H 0-179, S y V 0-255).
+# Calibrar midiendo una foto confirmada del mismo día (ver README).
+atuendo_hsv:
+  torso: [[40, 60, 50], [85, 255, 255]]      # verde
+  piernas: [[95, 40, 40], [125, 200, 220]]   # mezclilla azul
+
+# Opcional, solo con buscar.py --clip. En inglés porque el modelo rinde mejor así.
+descripcion_clip:
+  - a person with a red cap wearing a green hoodie and blue jeans
